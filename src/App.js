@@ -1,10 +1,19 @@
+import io from 'socket.io-client';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
+import Join from './components/Join';
+
+
+const socket = io.connect("http://localhost:5000");
 
 function App() {
   return (
-    <div className="App">
-      <h1>Welcome to React App</h1>
-    </div>
+    <BrowserRouter> 
+      <Routes> 
+        <Route path="/" element={<Join />} />
+      </Routes>
+    </BrowserRouter>
+    
   );
 }
 
