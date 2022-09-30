@@ -6,8 +6,6 @@ import { v4 as uuidv4 } from 'uuid';
 const socket = io.connect('https://node-chat-app-51q9.onrender.com');
 
 
-
-
 function Join() {
     const [sendUsername, setSendUsername] = useState('');
     const [isJoined, setIsJoined] = useState(false);
