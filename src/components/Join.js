@@ -3,7 +3,8 @@ import io from 'socket.io-client';
 import { useEffect, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
-const socket = io.connect('https://node-chat-app-51q9.onrender.com:5000');
+const socket = io.connect('https://node-chat-app-51q9.onrender.com');
+
 
 
 
